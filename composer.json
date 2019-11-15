@@ -11,7 +11,7 @@
         "drupal/lightning_core": "^5.0-beta2",
         "drupal/lightning_layout": "^2.3",
         "drupal/lightning_media": "^3.14",
-        "drupal/lightning_workflow": "^3.13",
+        "drupal/lightning_workflow": "^3.14",
         "oomphinc/composer-installers-extender": "^1.1"
     },
     "require-dev": {
