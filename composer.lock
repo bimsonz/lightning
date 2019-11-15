@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "6a396c92d8a301ca982c1c045e5e019c",
+    "content-hash": "505af5fe0e43fa2a2ffcff998df62653",
     "packages": [
         {
             "name": "asm89/stack-cors",
@@ -1548,9 +1548,6 @@
                         "status": "covered",
                         "message": "Covered by Drupal's security advisory policy"
                     }
-                },
-                "patches_applied": {
-                    "3052959 - Update 8103 does not work with Drupal 8.7": "https://www.drupal.org/files/issues/2019-05-17/3052959-12.patch"
                 }
             },
             "notification-url": "https://packages.drupal.org/8/downloads",
@@ -1842,12 +1839,6 @@
                         "[web-root]/profiles/README.txt": "assets/scaffold/files/profiles.README.txt",
                         "[web-root]/themes/README.txt": "assets/scaffold/files/themes.README.txt"
                     }
-                },
-                "patches_applied": {
-                    "2869592 - Disabled update module shouldn't produce a status report warning": "https://www.drupal.org/files/issues/2869592-remove-update-warning-7.patch",
-                    "2815221 - Add quickedit to the latest-revision route": "https://www.drupal.org/files/issues/2019-03-05/2815221-116.patch",
-                    "1356276 - Allow profiles to define a base/parent profile and load them in the correct order": "https://www.drupal.org/files/issues/2019-11-05/1356276-531-8.8.x-4.patch",
-                    "2914389 - Allow profiles to exclude dependencies of their parent": "https://www.drupal.org/files/issues/2018-07-09/2914389-8-do-not-test.patch"
                 }
             },
             "autoload": {
@@ -2441,9 +2432,6 @@
                         "status": "covered",
                         "message": "Covered by Drupal's security advisory policy"
                     }
-                },
-                "patches_applied": {
-                    "2877751 - Inform users how many items they can add to a field that uses an entity browser": "https://www.drupal.org/files/issues/2018-06-28/2877751-39-8.x-2.x.patch"
                 }
             },
             "notification-url": "https://packages.drupal.org/8/downloads",
@@ -3045,9 +3033,6 @@
                         "status": "not-covered",
                         "message": "Alpha releases are not covered by Drupal security advisories."
                     }
-                },
-                "patches_applied": {
-                    "2882709 - Misnamed interface causes \"Fatal error: Cannot declare interface Drupal\\libraries\\ExternalLibrary\\Utility\\LibraryAccessorIdInterface\"": "https://www.drupal.org/files/issues/2882709-2-interface-libraryidaccessorinterface-misnamed.patch"
                 }
             },
             "notification-url": "https://packages.drupal.org/8/downloads",
@@ -3086,21 +3071,20 @@
         },
         {
             "name": "drupal/lightning_api",
-            "version": "4.3.0",
+            "version": "4.4.0",
             "source": {
                 "type": "git",
                 "url": "https://git.drupalcode.org/project/lightning_api.git",
-                "reference": "8.x-4.3"
+                "reference": "8.x-4.4"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://ftp.drupal.org/files/projects/lightning_api-8.x-4.3.zip",
-                "reference": "8.x-4.3",
-                "shasum": "44daad62262a4c8f1ef0adbab03ea365025c5721"
+                "url": "https://ftp.drupal.org/files/projects/lightning_api-8.x-4.4.zip",
+                "reference": "8.x-4.4",
+                "shasum": "744b4a96ce621c7caa32cdd4f66e1456e4d44fc9"
             },
             "require": {
                 "cweagans/composer-patches": "^1.6.4",
-                "drupal-composer/drupal-scaffold": "^2.0.0",
                 "drupal/consumers": "1.9",
                 "drupal/core": "*",
                 "drupal/lightning_core": "4.* || 5.*",
@@ -3112,6 +3096,7 @@
                 "oomphinc/composer-installers-extender": "^1.1"
             },
             "require-dev": {
+                "drupal-composer/drupal-scaffold": "^2.6",
                 "drupal/schema_metatag": "^1.3",
                 "vijaycs85/drupal-quality-checker": "^1.0"
             },
@@ -3122,8 +3107,8 @@
                     "dev-8.x-4.x": "4.x-dev"
                 },
                 "drupal": {
-                    "version": "8.x-4.3",
-                    "datestamp": "1573654984",
+                    "version": "8.x-4.4",
+                    "datestamp": "1573784585",
                     "security-coverage": {
                         "status": "covered",
                         "message": "Covered by Drupal's security advisory policy"
@@ -3220,21 +3205,20 @@
         },
         {
             "name": "drupal/lightning_core",
-            "version": "5.0.0-beta1",
+            "version": "5.0.0-beta2",
             "source": {
                 "type": "git",
                 "url": "https://git.drupalcode.org/project/lightning_core.git",
-                "reference": "8.x-5.0-beta1"
+                "reference": "8.x-5.0-beta2"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://ftp.drupal.org/files/projects/lightning_core-8.x-5.0-beta1.zip",
-                "reference": "8.x-5.0-beta1",
-                "shasum": "5f9b568832752e5cf02aaee45f6aad02dfe383d3"
+                "url": "https://ftp.drupal.org/files/projects/lightning_core-8.x-5.0-beta2.zip",
+                "reference": "8.x-5.0-beta2",
+                "shasum": "a4ad907e50d15ea4b4b1d9916c8836a0e4f598d9"
             },
             "require": {
                 "cweagans/composer-patches": "^1.6.4",
-                "drupal-composer/drupal-scaffold": "^2.0.0",
                 "drupal/acquia_connector": "*",
                 "drupal/contact_storage": "^1.0.0-beta10",
                 "drupal/core": "~8.8.0-beta1 || 8.8.x-dev",
@@ -3250,6 +3234,7 @@
                 "drupal/drupal-extension": "<3.4.0"
             },
             "require-dev": {
+                "drupal-composer/drupal-scaffold": "^2.6",
                 "drupal/console": "^1.6",
                 "drupal/contact_storage": "*",
                 "drupal/drupal-extension": "^3.4",
@@ -3266,8 +3251,8 @@
                     "dev-8.x-4.x": "4.x-dev"
                 },
                 "drupal": {
-                    "version": "8.x-5.0-beta1",
-                    "datestamp": "1573502880",
+                    "version": "8.x-5.0-beta2",
+                    "datestamp": "1573785486",
                     "security-coverage": {
                         "status": "not-covered",
                         "message": "Beta releases are not covered by Drupal security advisories."
@@ -3381,21 +3366,20 @@
         },
         {
             "name": "drupal/lightning_layout",
-            "version": "2.2.0",
+            "version": "2.3.0",
             "source": {
                 "type": "git",
                 "url": "https://git.drupalcode.org/project/lightning_layout.git",
-                "reference": "8.x-2.2"
+                "reference": "8.x-2.3"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://ftp.drupal.org/files/projects/lightning_layout-8.x-2.2.zip",
-                "reference": "8.x-2.2",
-                "shasum": "f431362e3b8515c4285a98a8bf39d4c50c3aba5f"
+                "url": "https://ftp.drupal.org/files/projects/lightning_layout-8.x-2.3.zip",
+                "reference": "8.x-2.3",
+                "shasum": "aad4a234c0f61b1fb9980133ffd70eeb5f541abc"
             },
             "require": {
                 "cweagans/composer-patches": "^1.6.4",
-                "drupal-composer/drupal-scaffold": "^2.0.0",
                 "drupal/bg_image_formatter": "^1.10",
                 "drupal/core": "*",
                 "drupal/ctools": "^3.0",
@@ -3412,6 +3396,7 @@
                 "oomphinc/composer-installers-extender": "^1.1"
             },
             "require-dev": {
+                "drupal-composer/drupal-scaffold": "^2.6",
                 "drupal/bg_image_formatter": "*",
                 "drupal/schema_metatag": "^1.3",
                 "drupal/simple_gmap": "*",
@@ -3426,8 +3411,8 @@
                     "dev-2.x": "2.x-dev"
                 },
                 "drupal": {
-                    "version": "8.x-2.2",
-                    "datestamp": "1573657986",
+                    "version": "8.x-2.3",
+                    "datestamp": "1573786986",
                     "security-coverage": {
                         "status": "covered",
                         "message": "Covered by Drupal's security advisory policy"
@@ -3531,24 +3516,23 @@
         },
         {
             "name": "drupal/lightning_media",
-            "version": "3.13.0",
+            "version": "3.14.0",
             "source": {
                 "type": "git",
                 "url": "https://git.drupalcode.org/project/lightning_media.git",
-                "reference": "8.x-3.13"
+                "reference": "8.x-3.14"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://ftp.drupal.org/files/projects/lightning_media-8.x-3.13.zip",
-                "reference": "8.x-3.13",
-                "shasum": "f645a60ba1f5e72dbd679fbeb090c3e2f30af55d"
+                "url": "https://ftp.drupal.org/files/projects/lightning_media-8.x-3.14.zip",
+                "reference": "8.x-3.14",
+                "shasum": "344d135d56d07e1bad7c6fbb29920b33822d6bca"
             },
             "require": {
                 "bower-asset/cropper": "^2.3",
                 "bower-asset/dropzone": "^5.1",
                 "bower-asset/slick-carousel": "^1.8",
                 "cweagans/composer-patches": "^1.6.4",
-                "drupal-composer/drupal-scaffold": "^2.0.0",
                 "drupal/core": "*",
                 "drupal/crop": "^2.0.0-rc1",
                 "drupal/dropzonejs": "2.0.0-alpha4",
@@ -3568,6 +3552,7 @@
                 "vardot/blazy": "^1.8"
             },
             "require-dev": {
+                "drupal-composer/drupal-scaffold": "^2.6",
                 "drupal/dropzonejs": "*",
                 "drupal/drupal-extension": "^3.4",
                 "drupal/facets": "^1.2",
@@ -3588,8 +3573,8 @@
                     "dev-8.x-3.x": "3.x-dev"
                 },
                 "drupal": {
-                    "version": "8.x-3.13",
-                    "datestamp": "1573669686",
+                    "version": "8.x-3.14",
+                    "datestamp": "1573792984",
                     "security-coverage": {
                         "status": "covered",
                         "message": "Covered by Drupal's security advisory policy"
@@ -3688,17 +3673,17 @@
         },
         {
             "name": "drupal/lightning_workflow",
-            "version": "3.12.0",
+            "version": "3.13.0",
             "source": {
                 "type": "git",
                 "url": "https://git.drupalcode.org/project/lightning_workflow.git",
-                "reference": "8.x-3.12"
+                "reference": "8.x-3.13"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://ftp.drupal.org/files/projects/lightning_workflow-8.x-3.12.zip",
-                "reference": "8.x-3.12",
-                "shasum": "281004384b36fdd9d288fe7505ea3122900eb3e3"
+                "url": "https://ftp.drupal.org/files/projects/lightning_workflow-8.x-3.13.zip",
+                "reference": "8.x-3.13",
+                "shasum": "f30f32fbaff5fdddadc623ded1c6d4a945380ea4"
             },
             "require": {
                 "cweagans/composer-patches": "^1.6.4",
@@ -3730,8 +3715,8 @@
                     "dev-8.x-3.x": "3.x-dev"
                 },
                 "drupal": {
-                    "version": "8.x-3.12",
-                    "datestamp": "1573683784",
+                    "version": "8.x-3.13",
+                    "datestamp": "1573788185",
                     "security-coverage": {
                         "status": "covered",
                         "message": "Covered by Drupal's security advisory policy"
@@ -4427,9 +4412,6 @@
                         "status": "covered",
                         "message": "Covered by Drupal's security advisory policy"
                     }
-                },
-                "patches_applied": {
-                    "2778565 - Multilingual support for Panelizer": "https://www.drupal.org/files/issues/2018-08-13/panelizer-multilingual-2778565-38.patch"
                 }
             },
             "notification-url": "https://packages.drupal.org/8/downloads",
@@ -4511,10 +4493,6 @@
                         "status": "covered",
                         "message": "Covered by Drupal's security advisory policy"
                     }
-                },
-                "patches_applied": {
-                    "3030976 - Panels should check if there is an icon map before setting the no preview icon": "https://www.drupal.org/files/issues/2019-02-06/initial.patch",
-                    "2878684 - Use String.match to correlate regions when switching Layouts in Panels IPE": "https://www.drupal.org/files/issues/panels-ipe-2878684-3.patch"
                 }
             },
             "notification-url": "https://packages.drupal.org/8/downloads",
@@ -4667,9 +4645,6 @@
                         "status": "not-covered",
                         "message": "Alpha releases are not covered by Drupal security advisories."
                     }
-                },
-                "patches_applied": {
-                    "3093401 - Compatibility with Drupal 8.8.0-beta1": "https://www.drupal.org/files/issues/2019-11-11/3093401-6.patch"
                 }
             },
             "notification-url": "https://packages.drupal.org/8/downloads",
