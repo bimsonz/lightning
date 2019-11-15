@@ -60,6 +60,9 @@
         }
     },
     "autoload": {
+        "classmap": [
+            "src/Composer/ConfigureLegacyProject.php"
+        ],
         "psr-4": {
             "Acquia\\Lightning\\": "src"
         }
@@ -89,6 +92,7 @@
             "@composer package"
         ],
         "drupal-scaffold": "DrupalComposer\\DrupalScaffold\\Plugin::scaffold",
+        "configure-tarball": "Acquia\\Lightning\\Composer\\ConfigureLegacyProject::execute",
         "enable-asset-packagist": "Acquia\\Lightning\\Composer\\AssetPackagist::execute",
         "nuke": "rm -r -f docroot vendor",
         "package": "Acquia\\Lightning\\Composer\\Package::execute",
